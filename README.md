@@ -58,12 +58,13 @@ Paso 2. Creemos un nuevo repositorio en nuestra cuenta.
 
 <img src="./image_3.PNG" />
 
-Paso 3. Como queremos trabajar en local (es decir, queremos hacer todas las modificaciones desde nuestro pórtatil o nuestro servidor local), necesitamos clonar nuestro repositorio. ¡Crear las flechas de nuestro esquema! Copiemos el URL en SSH de GitHub.
+Paso 3. Como queremos trabajar en local (es decir, queremos hacer todas las modificaciones desde nuestro pórtatil o nuestro servidor local), necesitamos clonar nuestro repositorio. ¡Crear las flechas de nuestro esquema! 
+Es hora de crear nuestro clon en VSCode. Aunque podemos usar los diferentes iconos, aquí usaremos la terminal, y clonaremos usando nuestro URL en SSH (para mayor seguridad).
 
+¿Dónde encontrar el URL?
 <img src="./image_4.PNG" />
 
-Es hora de crear nuestro clon en VSCode. Aunque podemos usar los diferentes iconos, aquí usaremos la terminal.
-
+¿Cómo clonar en VSCode?
 <img src="./image_5.PNG" />
 
 
