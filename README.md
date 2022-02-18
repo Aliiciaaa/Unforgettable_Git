@@ -103,3 +103,29 @@ Todo está ready, pero simplemente hemos hecho un registro del cambio. ¿Cómo l
 
 git push origin 
 git push -u origin main 
+
+¡Ya podemos empezar a trabajar! Hemos hecho nuestro primer repositorio, hemos creado nuestro primer archivo, y lo mejor de todo, ya hemos hecho el primer commit y ha quedado registrado. Es más, si tuvieras curiosidad para ver cómo aparece en GitHub verás que puedes ver todas tus modificaciones y cúando se hicieron. Ten cuidado con lo que registras porque tus peores cagadas pueden dejar huella.
+
+En la siguiente parte, miraremos como funciona hacer un nuevo commit cuando ya llevamos un rato escribiendo, pero antes es necesario mencionar alguna de las recomendaciones a la hora de guardar cambios.
+
+                    1. Recuerda que a la hora de hacer commit estamos registrando un cambio. Es decir, si perdemos nuestro trabajo en local pero está registrado en GitHub siempre vamos a poder recuperarlo. ¡Qué alivio!
+                    2. Puede que de momento solo estés trabajando para ti mismo pero cuando colaboras con más gente quizás les interesa saber porque te dedicaste a borrar su código o añadirle florituras. Escribe un mensaje extenso dando los motivos de cambio cuando hagas un commit. Hay que ser buena persona.
+                    3. Con tanto cambio puede que nos podamos hacer un lío con las cosas que se han quedado registradas o cómo está nuestro archivo, por eso, estos comandos son útiles para revisar estas cuestiones.
+                        Terminal > git log - para ver los commits que hemos hecho en el repositorio.
+
+                        Terminal > git status - para ver el status de nuestro archivo. ¿Hemos registrado nuestras modificaciones? ¿Hemos cambiado algo? ¿Nos falta algún paso que se nos ha podido olvidar?
+
+5. Estados de nuestros archivos.
+¡Realicemos más commits! Para ello tenemos que conocer los estados de los cambios y cómo quedan representados.
+
+*Estados de los ficheros que manejamos en nuestro directorio:*
+
+1.Estado modificado : [directorio.git] Todo OK, todo listo y registrado en git. 
+
+2.Estado preparado: [working directory] trabajando en local listo para registrar. Bienvenido al área de preparación, nos indica que ficheros de los modificados son los que vamos a hacer commit. Si está vacía, todo perfecto, todo está clean!!
+
+<img src="./image_7.jpg" />
+
+3.Estado confirmado: [staging area]  aquí se está esperando a subir y confirmar lo que hemos hecho para que esté en el repositorio central. 
+
+<img src="./image_8.jpg" />
