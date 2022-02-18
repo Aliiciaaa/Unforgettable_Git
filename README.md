@@ -24,7 +24,7 @@ ser enviadas a Josechu para que haga las modificaciones, y los estudiantes no se
 Aquí es dónde enocontramos Git :). Un sistema de control de versiones distribuido.
 
 3. Git 
- 3. 1. Conceptos previos.
+3. 1. Conceptos previos.
 
 Definición 3.1. Un registro histórico es la trazabilidad del fichero. ¿Quién lo modifició?¿Cuándo?¿Por qué?
 Definición 3.2. Un commit es la unidad mínima de almacenamiento.
@@ -35,9 +35,36 @@ Tenemos Git para mi. Voy controlando los cambios que hago.
 
 O podemos usar Git con más gente. Sincronizar a todas las personas que colaboran en un proyecto a través de un repositorio central. En este caso el repositorio central/remoto se llama GitHub. 
 
-¿Cómo vamos trabajando con las modificaciones de los ficheros?
+3. 3. ¿Cómo vamos trabajando con las modificaciones de los ficheros?
 
 Tenemos tres identidades en las que vamos pasando los archivos: 
+
 Mi ordenador-GitHub (el repositorio central/remoto)-Servidor
 
 <img src="./image_1.PNG" />
+
+3. 4. ¿Cómo interectuamos con el repositorio central aka GitHub?
+
+Opción 1. Con la terminal de Git.
+
+<img src="./image_2.PNG" />
+
+Opción 2. Con un cliente gráfico: RStudio, VSCode (editor de código).
+
+4. Creemos un nuevo repositorio en nuestra cuenta de GitHub dede VSCode.
+
+Paso 1. Log In en GitHub :)
+Paso 2. Creemos un nuevo repositorio en nuestra cuenta.
+
+<img src="./image_3.PNG" />
+
+Paso 3. Como queremos trabajar en local (es decir, queremos hacer todas las modificaciones desde nuestro pórtatil o nuestro servidor local), necesitamos clonar nuestro repositorio. ¡Crear las flechas de nuestro esquema! Copiemos el URL en SSH de GitHub.
+
+<img src="./image_4.PNG" />
+
+Es hora de crear nuestro clon en VSCode. Aunque podemos usar los diferentes iconos, aquí usaremos la terminal.
+
+<img src="./image_5.PNG" />
+
+
+
