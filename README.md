@@ -127,8 +127,8 @@ En la siguiente parte, miraremos como funciona hacer un nuevo commit cuando ya l
 
 2.Estado preparado: [working directory] trabajando en local listo para registrar. Bienvenido al área de preparación, nos indica que ficheros de los modificados son los que vamos a hacer commit. Si está vacía, todo perfecto, todo está clean!!
 
-<img src="./image_7.jpg" />
+<img src="./image_7.PNG" />
 
 3.Estado confirmado: [staging area]  aquí se está esperando a subir y confirmar lo que hemos hecho para que esté en el repositorio central. 
 
-<img src="./image_8.jpg" />
+<img src="./image_8.PNG" />
