@@ -40,4 +40,4 @@ O podemos usar Git con más gente. Sincronizar a todas las personas que colabora
 Tenemos tres identidades en las que vamos pasando los archivos: 
 Mi ordenador-GitHub (el repositorio central/remoto)-Servidor
 
-<img src="./image1.jpg" />
+<img src="./image_1.PNG" />
