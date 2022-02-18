@@ -1,12 +1,12 @@
 # Unforgettable_Git
-CURSO GIT Paso a paso.
+<big> CURSO GIT Paso a paso.
 
-Definición 1. Un control de versiones es una herramienta para gestionar cambios o colaborar con más personas en un fichero. Entre los principales usos.
+*Definición 1.* Un control de versiones es una herramienta para gestionar cambios o colaborar con más personas en un fichero. Entre los principales usos.
 
 1. Conceptos previos.
 
-Definición 1.1. Un repositorio es una colección de ficheros y directorios que queremos versionar.
-Definición 1.2. Un cambio es una modificación de ficheros.
+*Definición 1.1.* Un repositorio es una colección de ficheros y directorios que queremos versionar.
+*Definición 1.2.* Un cambio es una modificación de ficheros.
 
 2. Tipos de controles de versiones.
 
@@ -26,8 +26,8 @@ Aquí es dónde enocontramos Git :). Un sistema de control de versiones distribu
 3. Git 
 3. 1.Conceptos previos.
 
-Definición 3.1. Un registro histórico es la trazabilidad del fichero. ¿Quién lo modifició?¿Cuándo?¿Por qué?
-Definición 3.2. Un commit es la unidad mínima de almacenamiento.
+*Definición 3.1.* Un registro histórico es la trazabilidad del fichero. ¿Quién lo modifició?¿Cuándo?¿Por qué?
+*Definición 3.2.* Un commit es la unidad mínima de almacenamiento.
 
 3. 2.¿Para qué usamos Git?
 
@@ -45,20 +45,20 @@ Mi ordenador-GitHub (el repositorio central/remoto)-Servidor
 
 3. 4.¿Cómo interectuamos con el repositorio central aka GitHub?
 
-Opción 1. Con la terminal de Git.
+*Opción 1.* Con la terminal de Git.
 
 <img src="./image_2.PNG" />
 
-Opción 2. Con un cliente gráfico: RStudio, VSCode (editor de código).
+*Opción 2.* Con un cliente gráfico: RStudio, VSCode (editor de código).
 
 4. Creemos un nuevo repositorio en nuestra cuenta de GitHub dede VSCode.
 
-Paso 1. Log In en GitHub :)
-Paso 2. Creemos un nuevo repositorio en nuestra cuenta.
+*Paso 1.* Log In en GitHub :)
+*Paso 2.* Creemos un nuevo repositorio en nuestra cuenta.
 
 <img src="./image_3.PNG" />
 
-Paso 3. Como queremos trabajar en local (es decir, queremos hacer todas las modificaciones desde nuestro pórtatil o nuestro servidor local), necesitamos clonar nuestro repositorio. ¡Crear las flechas de nuestro esquema! 
+*Paso 3.* Como queremos trabajar en local (es decir, queremos hacer todas las modificaciones desde nuestro pórtatil o nuestro servidor local), necesitamos clonar nuestro repositorio. ¡Crear las flechas de nuestro esquema! 
 Es hora de crear nuestro clon en VSCode. Aunque podemos usar los diferentes iconos, aquí usaremos la terminal, y clonaremos usando nuestro URL en SSH (para mayor seguridad).
 
 ¿Dónde encontrar el URL?
@@ -73,47 +73,50 @@ Como estamos iniciando nuestro repositorio desde cero, tenemos que añadir algú
 
 Veamos que nos quiere decir, cuando ejecutemos este código en nuestra terminal.
 
-echo "# Unforgettable_Git" >> README.md 
+    echo "# Unforgettable_Git" >> README.md 
 
 En esta línea de código creamos este archivo para convertir nuestro ahora conjunto vacío, en un repositorio con aspiraciones.
 
-git init
+    git init
 
 Inicializamos nuestro repositorio.
 
-git add README.md
+    git add README.md
 
 Añadimos en nuestro repositorio  el archivo que hemos creado.
 
-git commit -m "first commit"
+    git commit -m "first commit"
 
 Queremos guardar nuestro primer cambio. Por eso queremos crear nuestro primer registro de cambios con un mensaje para que nos quede claro, este es nuestro "first commit" en el repositorio.
 
 A partir de ahora queremos indicar donde se van a guardar todos los cambios que vamos haciendo. Y para ello creamos una "branch" donde encontraremos el registro de cambios.
 
-git branch -M main
+    git branch -M main
 
 Esta es la rama principal que tendrá el registro de cambios almacenados/commits. Por supuesto , podemos crear todas las ramas que queramos en las que añadiremos los commits, pero esto no nos interesa en este momento :) .
 
 Además, de ponerle un bonito nombre a nuestro registro, cada vez que queramos trabajar en este repositorio copiar nuestro URL inicial sería tedioso, y un poco feo :/, por eso también vamos a ponerle un nombre original. Como el repositorio es el origen de nuestra aventura, le llamaremos 'origin':
 
-git remote add origin git@github.com:Aliiciaaa/Unforgettable_Git.git
+    git remote add origin git@github.com:Aliiciaaa/Unforgettable_Git.git
 
 Todo está ready, pero simplemente hemos hecho un registro del cambio. ¿Cómo lo podemos ver en GitHub? Por favor git, podrías añadir mis cambios a 'origin', no sólo a origin, pero porfa, no te salgas del registro que hemos marcado, de nuestra 'branch':
 
-git push origin 
-git push -u origin main 
+    git push origin 
+    git push -u origin main 
 
 ¡Ya podemos empezar a trabajar! Hemos hecho nuestro primer repositorio, hemos creado nuestro primer archivo, y lo mejor de todo, ya hemos hecho el primer commit y ha quedado registrado. Es más, si tuvieras curiosidad para ver cómo aparece en GitHub verás que puedes ver todas tus modificaciones y cúando se hicieron. Ten cuidado con lo que registras porque tus peores cagadas pueden dejar huella.
 
 En la siguiente parte, miraremos como funciona hacer un nuevo commit cuando ya llevamos un rato escribiendo, pero antes es necesario mencionar alguna de las recomendaciones a la hora de guardar cambios.
 
-                    1. Recuerda que a la hora de hacer commit estamos registrando un cambio. Es decir, si perdemos nuestro trabajo en local pero está registrado en GitHub siempre vamos a poder recuperarlo. ¡Qué alivio!
-                    2. Puede que de momento solo estés trabajando para ti mismo pero cuando colaboras con más gente quizás les interesa saber porque te dedicaste a borrar su código o añadirle florituras. Escribe un mensaje extenso dando los motivos de cambio cuando hagas un commit. Hay que ser buena persona.
-                    3. Con tanto cambio puede que nos podamos hacer un lío con las cosas que se han quedado registradas o cómo está nuestro archivo, por eso, estos comandos son útiles para revisar estas cuestiones.
-                        Terminal > git log - para ver los commits que hemos hecho en el repositorio.
-
-                        Terminal > git status - para ver el status de nuestro archivo. ¿Hemos registrado nuestras modificaciones? ¿Hemos cambiado algo? ¿Nos falta algún paso que se nos ha podido olvidar?
+1. Recuerda que a la hora de hacer commit estamos registrando un cambio. Es decir, si perdemos nuestro trabajo en local pero está registrado en GitHub siempre vamos a poder recuperarlo. ¡Qué alivio!
+                    
+2. Puede que de momento solo estés trabajando para ti mismo pero cuando colaboras con más gente quizás les interesa saber porque te dedicaste a borrar su código o añadirle florituras. Escribe un mensaje extenso dando los motivos de cambio cuando hagas un commit. Hay que ser buena persona.
+                    
+3. Con tanto cambio puede que nos podamos hacer un lío con las cosas que se han quedado registradas o cómo está nuestro archivo, por eso, estos comandos son útiles para revisar estas cuestiones.
+    
+    Terminal > git log - para ver los commits que hemos hecho en el repositorio.
+    
+    Terminal > git status - para ver el status de nuestro archivo. ¿Hemos registrado nuestras modificaciones? ¿Hemos cambiado algo? ¿Nos falta algún paso que se nos ha podido olvidar?
 
 5. Estados de nuestros archivos.
 ¡Realicemos más commits! Para ello tenemos que conocer los estados de los cambios y cómo quedan representados.
