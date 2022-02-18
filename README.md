@@ -69,7 +69,7 @@ Es hora de crear nuestro clon en VSCode. Aunque podemos usar los diferentes icon
 
 Como estamos iniciando nuestro repositorio desde cero, tenemos que añadir algún archivo para empezar. ¡No queremos trabajar con un conjunto vacío! Desde GitHub nos recomiendan crear un archivo README.md y realizar nuestro primer commit, es decir, ¡nuestro primer cambio registrado! Toda esta información aparecerá en GitHub cuando veas el interior de tu nuevo repositorio (el listado de código que parece que va a generarte una bomba nuclear). Aquí: 
 
-<img src="./image_6.JPG" />
+<img src="./image_6.jpg" />
 
 Veamos que nos quiere decir, cuando ejecutemos este código en nuestra terminal.
 
